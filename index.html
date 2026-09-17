@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base 2 Crew | Channel Staff Portal</title>
+    <style>
+        /* Modern Dark Theme Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0a0a0a;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e53935;
+        }
+
+        nav .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: #e53935;
+        }
+
+        /* Hero Header */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+                        url('logo.jpg') center/cover no-repeat;
+            padding: 70px 20px;
+            text-align: center;
+            border-bottom: 4px solid #e53935;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-left: 4px solid #e53935;
+            padding-left: 10px;
+        }
+
+        /* Staff Roster Grid */
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .staff-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            border: 1px solid #333;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .staff-card:hover {
+            transform: translateY(-5px);
+            border-color: #e53935;
+        }
+
+        .staff-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #2a2a2a;
+            border: 3px solid #e53935;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+        }
+
+        .staff-card h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .staff-role {
+            color: #e53935;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .staff-desc {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Staff Guidelines & Ops Section */
+        .ops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .ops-card {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .ops-card h3 {
+            color: #e53935;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .ops-card ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+        .ops-card li {
+            margin-bottom: 8px;
+        }
+
+        /* Discord CTA */
+        .discord-box {
+            background-color: #2c2f33;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .discord-btn {
+            display: inline-block;
+            background-color: #5865F2;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .discord-btn:hover {
+            background-color: #4752C4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0a0a0a;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Base 2 Staff Portal</a>
+        <div class="nav-links">
+            <a href="https://noahandedsadventure.github.io/main-website/" target="_blank">Main Site</a>
+            <a href="https://www.youtube.com/@NoahandEdsTrainadventures" target="_blank">YouTube</a>
+            <a href="https://discord.com/invite/S9EEjTnTmt" target="_blank">Staff Discord</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Base 2 Crew & Staff Hub</h1>
+        <p>Operational site for team member roles, field ops guidelines, and channel management.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Staff Roster Section -->
+        <h2>Active Roster</h2>
+        <div class="staff-grid">
+            
+            <div class="staff-card">
+                <div class="staff-avatar">🎥</div>
+                <h3>Noah</h3>
+                <span class="staff-role">Lead Editor & Railfan</span>
+                <p class="staff-desc">Manages channel editing, uploads 4K railfanning content, and oversees main site operations.</p>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-avatar">🚂</div>
+                <h3>Ed</h3>
+                <span class="staff-role">Co-Host & Field Crew</span>
+                <p class="staff-desc">Tracks CN train movements along the Sprague Sub and assists with live streams and field catches.</p>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-avatar">📡</div>
+                <h3>Tucker</h3>
+                <span class="staff-role">Field Ops / Scanner Radio</span>
+                <p class="staff-desc">Monitors radio traffic on 161.415 MHz, tracks defect detectors, and calls out upcoming trains.</p>
+            </div>
+
+        </div>
+
+        <!-- Operations & Staff Responsibilities -->
+        <h2>Staff Operations</h2>
+        <div class="ops-grid">
+            <div class="ops-card">
+                <h3>Trackside Duties</h3>
+                <ul>
+                    <li>Maintain scanner monitoring on 161.415 MHz (AAR 87).</li>
+                    <li>Ensure camera gear is safe and set up at a secure distance from active tracks.</li>
+                    <li>Coordinate live updates to Discord when tracking rare power or meets.</li>
+                </ul>
+            </div>
+
+            <div class="ops-card">
+                <h3>Discord & Community</h3>
+                <ul>
+                    <li>Moderate main Discord channels for the Base 2 Crew.</li>
+                    <li>Announce YouTube video releases and upcoming stream alerts.</li>
+                    <li>Help incoming railfans with Sprague Sub frequency information.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Discord Access -->
+        <div class="discord-box">
+            <h2>Staff Discord Access</h2>
+            <p>Connect to the team server for real-time radio chatter and field communication.</p>
+            <a href="https://discord.com/invite/S9EEjTnTmt" target="_blank" class="discord-btn">Open Staff Discord</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Base 2 Crew Staff Portal. Noah and Ed's Train Adventures.</p>
+    </footer>
+
+</body>
+</html>
