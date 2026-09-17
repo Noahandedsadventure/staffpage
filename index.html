@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base 2 Crew | Channel Staff Portal</title>
+    <title>[INTERNAL] Staff Ops Portal | Base 2 Crew</title>
     <style>
-        /* Modern Dark Theme Styling */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,278 +13,305 @@
         }
 
         body {
-            background-color: #121212;
+            background-color: #0d0d0d;
             color: #e0e0e0;
             line-height: 1.6;
         }
 
+        /* Top Warning Banner */
+        .internal-banner {
+            background-color: #d32f2f;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
         /* Navigation Bar */
         nav {
-            background-color: #0a0a0a;
+            background-color: #141414;
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #e53935;
+            border-bottom: 2px solid #d32f2f;
         }
 
         nav .logo {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #fff;
             text-decoration: none;
         }
 
         nav .nav-links a {
-            color: #ccc;
+            color: #888;
             text-decoration: none;
             margin-left: 20px;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         nav .nav-links a:hover {
-            color: #e53935;
-        }
-
-        /* Hero Header */
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
-                        url('logo.jpg') center/cover no-repeat;
-            padding: 70px 20px;
-            text-align: center;
-            border-bottom: 4px solid #e53935;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #cccccc;
-            max-width: 600px;
-            margin: 0 auto;
+            color: #d32f2f;
         }
 
         .container {
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
         h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 18px;
             color: #ffffff;
-            border-left: 4px solid #e53935;
+            border-left: 4px solid #d32f2f;
             padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        /* Staff Roster Grid */
-        .staff-grid {
+        /* Internal Roster Cards */
+        .roster-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .staff-card {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            border: 1px solid #333;
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .staff-card:hover {
-            transform: translateY(-5px);
-            border-color: #e53935;
-        }
-
-        .staff-avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background-color: #2a2a2a;
-            border: 3px solid #e53935;
-            margin: 0 auto 15px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.2rem;
+            background-color: #161616;
+            border-radius: 6px;
+            border: 1px solid #2a2a2a;
+            padding: 20px;
         }
 
         .staff-card h3 {
             color: #ffffff;
-            font-size: 1.3rem;
-            margin-bottom: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 4px;
         }
 
         .staff-role {
-            color: #e53935;
+            color: #d32f2f;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             display: block;
         }
 
-        .staff-desc {
-            color: #aaa;
-            font-size: 0.9rem;
+        .staff-details {
+            font-size: 0.88rem;
+            color: #bbb;
         }
 
-        /* Staff Guidelines & Ops Section */
+        .staff-details p {
+            margin-bottom: 6px;
+        }
+
+        .staff-details strong {
+            color: #fff;
+        }
+
+        /* Ops Grid */
         .ops-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .ops-card {
-            background-color: #1e1e1e;
-            padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #333;
+            background-color: #161616;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #2a2a2a;
         }
 
         .ops-card h3 {
-            color: #e53935;
+            color: #d32f2f;
             margin-bottom: 12px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
         }
 
         .ops-card ul {
-            list-style-type: square;
-            margin-left: 20px;
-            color: #ccc;
+            list-style-type: none;
         }
 
         .ops-card li {
-            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #ccc;
         }
 
-        /* Discord CTA */
-        .discord-box {
-            background-color: #2c2f33;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            margin-bottom: 50px;
+        .ops-card li::before {
+            content: "■";
+            color: #d32f2f;
+            font-size: 0.7rem;
+            position: absolute;
+            left: 0;
+            top: 2px;
         }
 
-        .discord-btn {
-            display: inline-block;
-            background-color: #5865F2;
-            color: white;
-            padding: 12px 28px;
-            border-radius: 5px;
-            text-decoration: none;
+        /* Radio Quick Ref Table */
+        .freq-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.88rem;
+        }
+
+        .freq-table th, .freq-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .freq-table th {
+            background-color: #1f1f1f;
+            color: #d32f2f;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .freq-table td {
+            color: #ccc;
+        }
+
+        .freq-table td.code {
+            font-family: monospace;
             font-weight: bold;
-            margin-top: 15px;
-            transition: background 0.3s;
-        }
-
-        .discord-btn:hover {
-            background-color: #4752C4;
+            color: #fff;
         }
 
         footer {
             text-align: center;
-            padding: 25px;
-            background-color: #0a0a0a;
-            color: #777;
-            font-size: 0.9rem;
+            padding: 20px;
+            background-color: #141414;
+            color: #555;
+            font-size: 0.8rem;
             border-top: 1px solid #222;
         }
     </style>
 </head>
 <body>
 
+    <div class="internal-banner">
+        ⚠️ RESTRICTED ACCESS — BASE 2 CREW INTERNAL OPERATIONAL PORTAL ONLY ⚠️
+    </div>
+
     <nav>
-        <a href="index.html" class="logo">Base 2 Staff Portal</a>
+        <a href="index.html" class="logo">BASE 2 OPS PORTAL</a>
         <div class="nav-links">
             <a href="https://noahandedsadventure.github.io/main-website/" target="_blank">Main Site</a>
-            <a href="https://www.youtube.com/@NoahandEdsTrainadventures" target="_blank">YouTube</a>
-            <a href="https://discord.com/invite/S9EEjTnTmt" target="_blank">Staff Discord</a>
         </div>
     </nav>
 
-    <header>
-        <h1>Base 2 Crew & Staff Hub</h1>
-        <p>Operational site for team member roles, field ops guidelines, and channel management.</p>
-    </header>
-
     <div class="container">
 
-        <!-- Staff Roster Section -->
-        <h2>Active Roster</h2>
-        <div class="staff-grid">
+        <!-- Internal Team Directory -->
+        <h2>Team Roster & Assigned Gear</h2>
+        <div class="roster-grid">
             
             <div class="staff-card">
-                <div class="staff-avatar">🎥</div>
                 <h3>Noah</h3>
-                <span class="staff-role">Lead Editor & Railfan</span>
-                <p class="staff-desc">Manages channel editing, uploads 4K railfanning content, and oversees main site operations.</p>
+                <span class="staff-role">Lead Editor & Channel Ops</span>
+                <div class="staff-details">
+                    <p><strong>Primary Role:</strong> Video post-production, 4K rendering, site updates.</p>
+                    <p><strong>Primary Gear:</strong> Editing Rig, Main Camera Body.</p>
+                    <p><strong>Focus:</strong> Final cut approval and release scheduling.</p>
+                </div>
             </div>
 
             <div class="staff-card">
-                <div class="staff-avatar">🚂</div>
                 <h3>Ed</h3>
-                <span class="staff-role">Co-Host & Field Crew</span>
-                <p class="staff-desc">Tracks CN train movements along the Sprague Sub and assists with live streams and field catches.</p>
+                <span class="staff-role">Co-Host & Field Operations</span>
+                <p class="staff-details">
+                    <p><strong>Primary Role:</strong> Trackside scouting, field production, live streams.</p>
+                    <p><strong>Primary Gear:</strong> Tripod setup, Field Audio/Camera B.</p>
+                    <p><strong>Focus:</strong> Catching Sprague Sub meets and special power.</p>
+                </p>
             </div>
 
             <div class="staff-card">
-                <div class="staff-avatar">📡</div>
                 <h3>Tucker</h3>
-                <span class="staff-role">Field Ops / Scanner Radio</span>
-                <p class="staff-desc">Monitors radio traffic on 161.415 MHz, tracks defect detectors, and calls out upcoming trains.</p>
+                <span class="staff-role">Field Ops / Radio Monitoring</span>
+                <div class="staff-details">
+                    <p><strong>Primary Role:</strong> Scanner monitoring, defect detector logging, communications.</p>
+                    <p><strong>Primary Gear:</strong> Scanner Setup (AAR 87 monitoring).</p>
+                    <p><strong>Focus:</strong> Heads-up calls for approaching trains.</p>
+                </div>
             </div>
 
         </div>
 
-        <!-- Operations & Staff Responsibilities -->
-        <h2>Staff Operations</h2>
+        <!-- Operations & Safety Checklist -->
+        <h2>Field Operations Protocols</h2>
         <div class="ops-grid">
             <div class="ops-card">
-                <h3>Trackside Duties</h3>
+                <h3>Trackside Checklist</h3>
                 <ul>
-                    <li>Maintain scanner monitoring on 161.415 MHz (AAR 87).</li>
-                    <li>Ensure camera gear is safe and set up at a secure distance from active tracks.</li>
-                    <li>Coordinate live updates to Discord when tracking rare power or meets.</li>
+                    <li>Verify scanner reception on 161.415 MHz prior to departure.</li>
+                    <li>Ensure high-visibility vests and proper footwear are in vehicle.</li>
+                    <li>Maintain minimum 15-25ft distance from active right-of-way at all times.</li>
+                    <li>Log mileage location when spotting rare power or foreign units.</li>
                 </ul>
             </div>
 
             <div class="ops-card">
-                <h3>Discord & Community</h3>
+                <h3>Media Pipeline Workflow</h3>
                 <ul>
-                    <li>Moderate main Discord channels for the Base 2 Crew.</li>
-                    <li>Announce YouTube video releases and upcoming stream alerts.</li>
-                    <li>Help incoming railfans with Sprague Sub frequency information.</li>
+                    <li>Offload raw SD card footage to storage immediately after field runs.</li>
+                    <li>Label clips with date, location, and engine number (e.g., <i>2026-09-17_Piney_CN3851.mp4</i>).</li>
+                    <li>Pass raw cuts to Noah for color pass and edit assembly.</li>
+                    <li>Sync with team prior to setting stream or upload live times.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Discord Access -->
-        <div class="discord-box">
-            <h2>Staff Discord Access</h2>
-            <p>Connect to the team server for real-time radio chatter and field communication.</p>
-            <a href="https://discord.com/invite/S9EEjTnTmt" target="_blank" class="discord-btn">Open Staff Discord</a>
-        </div>
+        <!-- Technical Radio Reference -->
+        <h2>Sprague Sub Channel Reference</h2>
+        <table class="freq-table">
+            <thead>
+                <tr>
+                    <th>Frequency</th>
+                    <th>Channel</th>
+                    <th>Primary Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">161.415 MHz</td>
+                    <td>AAR 87</td>
+                    <td>CN Road Channel (Main Sprague Sub Traffic)</td>
+                </tr>
+                <tr>
+                    <td class="code">161.205 MHz</td>
+                    <td>AAR 73</td>
+                    <td>Train Standby / Dispatcher Communications</td>
+                </tr>
+                <tr>
+                    <td class="code">160.935 MHz</td>
+                    <td>AAR 55</td>
+                    <td>Local Yard Operations & Switching</td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Base 2 Crew Staff Portal. Noah and Ed's Train Adventures.</p>
+        <p>Base 2 Crew Internal Use Only — Noah and Ed's Train Adventures Ops</p>
     </footer>
 
 </body>
