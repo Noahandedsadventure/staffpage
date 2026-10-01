@@ -1203,3 +1203,490 @@ footer {
     }
 
 }
+/* =====================================
+   STAFF OPERATIONS PAGES
+===================================== */
+
+.page-hero {
+
+    padding:
+        70px 0 50px;
+
+}
+
+
+.page-hero h2 {
+
+    font-size:
+        clamp(42px, 7vw, 70px);
+
+    line-height:
+        .95;
+
+    letter-spacing:
+        -3px;
+
+    margin:
+        22px 0;
+
+}
+
+
+.page-hero h2 span {
+
+    display:
+        block;
+
+    color:
+        var(--red-light);
+
+}
+
+
+.page-hero p {
+
+    max-width:
+        650px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        18px;
+
+    line-height:
+        1.6;
+
+}
+
+
+/* DASHBOARD */
+
+.dashboard-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        14px;
+
+}
+
+
+.dashboard-card {
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+    padding:
+        24px;
+
+}
+
+
+.big-icon {
+
+    font-size:
+        32px;
+
+}
+
+
+.dashboard-card h3 {
+
+    margin:
+        15px 0 5px;
+
+}
+
+
+.dashboard-card p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+}
+
+
+/* FORMS */
+
+.staff-form {
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+    padding:
+        25px;
+
+    display:
+        grid;
+
+    gap:
+        18px;
+
+}
+
+
+.staff-form label {
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+}
+
+
+.staff-form input,
+.staff-form textarea {
+
+    width:
+        100%;
+
+    padding:
+        13px;
+
+    background:
+        #0b1017;
+
+    color:
+        var(--text);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+    font-family:
+        inherit;
+
+}
+
+
+.staff-form textarea {
+
+    min-height:
+        120px;
+
+    resize:
+        vertical;
+
+}
+
+
+.staff-form input:focus,
+.staff-form textarea:focus {
+
+    outline:
+        none;
+
+    border-color:
+        var(--red);
+
+}
+
+
+.staff-form button {
+
+    width:
+        fit-content;
+
+    padding:
+        12px 20px;
+
+    background:
+        var(--red);
+
+    color:
+        white;
+
+    border:
+        none;
+
+    border-radius:
+        8px;
+
+    cursor:
+        pointer;
+
+    font-weight:
+        800;
+
+}
+
+
+.staff-form button:hover {
+
+    background:
+        var(--red-light);
+
+}
+
+
+/* CHECKLIST */
+
+.checklist {
+
+    display:
+        grid;
+
+    gap:
+        10px;
+
+}
+
+
+.checklist label {
+
+    padding:
+        17px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        var(--text);
+
+}
+
+
+.checklist input {
+
+    margin-right:
+        10px;
+
+}
+
+
+/* EMPTY STATE */
+
+.empty-state {
+
+    text-align:
+        center;
+
+    padding:
+        55px 20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+}
+
+
+.empty-state:first-letter {
+
+    font-size:
+        35px;
+
+}
+
+
+.empty-state h3 {
+
+    margin:
+        12px 0 6px;
+
+}
+
+
+.empty-state p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* SCHEDULE */
+
+.schedule-list {
+
+    display:
+        grid;
+
+    gap:
+        12px;
+
+}
+
+
+.schedule-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    padding:
+        20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+}
+
+
+.schedule-date {
+
+    min-width:
+        65px;
+
+    height:
+        70px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    align-content:
+        center;
+
+    background:
+        #1b222c;
+
+    border-radius:
+        9px;
+
+}
+
+
+.schedule-date span {
+
+    color:
+        var(--red-light);
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+}
+
+
+.schedule-date strong {
+
+    font-size:
+        24px;
+
+}
+
+
+.event-type {
+
+    color:
+        var(--red-light);
+
+    font-size:
+        9px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.schedule-item h3 {
+
+    margin:
+        5px 0;
+
+}
+
+
+.schedule-item p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+}
+
+
+@media (max-width: 850px) {
+
+    .dashboard-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .dashboard-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
