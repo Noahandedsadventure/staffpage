@@ -1,67 +1,119 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Staff Portal | Noah & Ed's Train Adventures</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Noah & Ed's Train Adventures Staff Portal"
+    >
+
+    <title>
+        Staff Portal | Noah & Ed's Train Adventures
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
+
+<!-- =========================================
+     TOP NAVIGATION
+========================================= -->
 
 <header class="topbar">
 
     <div class="brand">
 
-        <img src="logo.jpg"
-             alt="Noah & Ed's Train Adventures"
-             class="logo">
+        <img
+            src="logo.jpg"
+            alt="Noah & Ed's Train Adventures"
+            class="logo"
+        >
 
-        <div>
+        <div class="brand-text">
+
             <div class="eyebrow">
                 NOAH & ED'S TRAIN ADVENTURES
             </div>
 
-            <h1>STAFF PORTAL</h1>
+            <h1>
+                STAFF PORTAL
+            </h1>
+
         </div>
 
     </div>
 
+
     <a
         href="https://noahandedsadventure.github.io/main-website/"
-        class="back-button">
+        class="back-button"
+    >
         ← Main Website
     </a>
 
 </header>
 
 
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
 <main>
 
-    <!-- HERO -->
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
 
     <section class="hero">
 
         <div class="hero-content">
 
             <div class="online-status">
+
                 <span class="status-dot"></span>
+
                 STAFF OPERATIONS ONLINE
+
             </div>
 
+
             <h2>
+
                 Welcome to the
-                <span>Operations Center.</span>
+
+                <span>
+                    Operations Center.
+                </span>
+
             </h2>
 
+
             <p>
-                The central hub for the Noah & Ed's Train Adventures
-                team, projects, train operations and channel planning.
+
+                The central hub for the
+                Noah & Ed's Train Adventures
+                team, channel projects,
+                train operations and planning.
+
             </p>
 
         </div>
+
 
 
         <div class="status-card">
@@ -70,14 +122,18 @@
                 🚂
             </div>
 
+
             <div>
+
                 <div class="status-title">
                     CHANNEL STATUS
                 </div>
 
+
                 <div class="status-online">
                     ● OPERATIONAL
                 </div>
+
             </div>
 
         </div>
@@ -86,21 +142,30 @@
 
 
 
-    <!-- STAFF -->
+    <!-- =====================================
+         STAFF DIRECTORY
+    ====================================== -->
 
     <section class="section">
 
         <div class="section-header">
 
-            <span>01</span>
+            <span>
+                01
+            </span>
 
-            <h2>Staff Directory</h2>
+            <h2>
+                Staff Directory
+            </h2>
 
         </div>
 
 
+
         <div class="staff-grid">
 
+
+            <!-- NOAH -->
 
             <div class="staff-card owner">
 
@@ -108,13 +173,18 @@
                     N
                 </div>
 
+
                 <div>
 
-                    <h3>Noah</h3>
+                    <h3>
+                        Noah
+                    </h3>
+
 
                     <p>
                         Owner / Creator
                     </p>
+
 
                     <span class="badge">
                         OWNER
@@ -126,19 +196,26 @@
 
 
 
+            <!-- ED -->
+
             <div class="staff-card">
 
                 <div class="avatar">
                     E
                 </div>
 
+
                 <div>
 
-                    <h3>Ed</h3>
+                    <h3>
+                        Ed
+                    </h3>
+
 
                     <p>
                         Adventure Team
                     </p>
+
 
                     <span class="badge">
                         TEAM
@@ -150,19 +227,26 @@
 
 
 
+            <!-- TUCKER -->
+
             <div class="staff-card">
 
                 <div class="avatar">
                     T
                 </div>
 
+
                 <div>
 
-                    <h3>Tucker</h3>
+                    <h3>
+                        Tucker
+                    </h3>
+
 
                     <p>
                         Field Operations / Base 2 Crew
                     </p>
+
 
                     <span class="badge">
                         FIELD OPS
@@ -179,139 +263,182 @@
 
 
 
-    <!-- OPERATIONS -->
+    <!-- =====================================
+         STAFF OPERATIONS
+    ====================================== -->
 
     <section class="section">
 
         <div class="section-header">
 
-            <span>02</span>
+            <span>
+                02
+            </span>
 
-            <h2>Operations</h2>
+            <h2>
+                Staff Operations
+            </h2>
 
         </div>
+
 
 
         <div class="tools-grid">
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Livestream Control')">
+            <!-- LIVESTREAM -->
+
+            <a
+                href="livestream.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     🎥
                 </div>
 
+
                 <h3>
                     Livestream Control
                 </h3>
 
+
                 <p>
-                    Stream planning, production and
-                    livestream operations.
+                    Stream planning, production
+                    and livestream operations.
                 </p>
 
-            </button>
+            </a>
 
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Video Planning')">
+            <!-- VIDEOS -->
+
+            <a
+                href="videos.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     📹
                 </div>
 
+
                 <h3>
                     Video Planning
                 </h3>
+
 
                 <p>
                     Plan upcoming YouTube videos
                     and channel projects.
                 </p>
 
-            </button>
+            </a>
 
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Train Sightings')">
+            <!-- TRAIN SIGHTINGS -->
+
+            <a
+                href="trains.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     🚂
                 </div>
 
+
                 <h3>
                     Train Sightings
                 </h3>
 
+
                 <p>
-                    Keep track of train catches,
+                    Record train catches,
                     locations and field activity.
                 </p>
 
-            </button>
+            </a>
 
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Scanner & Communications')">
+            <!-- SCANNER -->
+
+            <a
+                href="scanner.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     📻
                 </div>
 
+
                 <h3>
                     Scanner & Communications
                 </h3>
 
+
                 <p>
-                    Scanner, communications and
-                    field equipment information.
+                    Scanner, communications
+                    and field equipment information.
                 </p>
 
-            </button>
+            </a>
 
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Train Log')">
+            <!-- TRAIN LOG -->
+
+            <a
+                href="train-log.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     📋
                 </div>
 
+
                 <h3>
                     Train Log
                 </h3>
+
 
                 <p>
                     Record and organize train
                     sightings and detector information.
                 </p>
 
-            </button>
+            </a>
 
 
 
-            <button class="tool-card"
-                    onclick="showNotice('Schedule')">
+            <!-- SCHEDULE -->
+
+            <a
+                href="schedule.html"
+                class="tool-card"
+            >
 
                 <div class="tool-icon">
                     📅
                 </div>
 
+
                 <h3>
                     Schedule
                 </h3>
+
 
                 <p>
                     Upcoming videos, livestreams,
                     trips and channel events.
                 </p>
 
-            </button>
+            </a>
 
 
         </div>
@@ -320,16 +447,22 @@
 
 
 
-    <!-- ANNOUNCEMENTS -->
+    <!-- =====================================
+         ANNOUNCEMENTS + QUICK LINKS
+    ====================================== -->
 
     <section class="two-column section">
 
+
+        <!-- ANNOUNCEMENTS -->
 
         <div class="panel">
 
             <div class="panel-header">
 
-                <span>📢</span>
+                <span>
+                    📢
+                </span>
 
                 <h2>
                     Staff Announcements
@@ -338,9 +471,11 @@
             </div>
 
 
+
             <div class="announcement">
 
                 <span class="announcement-dot"></span>
+
 
                 <div>
 
@@ -348,9 +483,10 @@
                         Welcome to the new Staff Portal
                     </strong>
 
+
                     <p>
-                        The staff website has been redesigned
-                        for channel operations.
+                        The staff website has been
+                        redesigned for channel operations.
                     </p>
 
                 </div>
@@ -358,9 +494,11 @@
             </div>
 
 
+
             <div class="announcement">
 
                 <span class="announcement-dot"></span>
+
 
                 <div>
 
@@ -368,15 +506,39 @@
                         Channel Operations
                     </strong>
 
+
                     <p>
-                        Use the Operations section to access
-                        future staff tools.
+                        Use the Operations section
+                        to access the staff tools.
                     </p>
 
                 </div>
 
             </div>
 
+
+
+            <div class="announcement">
+
+                <span class="announcement-dot"></span>
+
+
+                <div>
+
+                    <strong>
+                        Train Operations
+                    </strong>
+
+
+                    <p>
+                        Train logs and sightings can
+                        be managed through the Operations
+                        Center.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -388,7 +550,9 @@
 
             <div class="panel-header">
 
-                <span>🔗</span>
+                <span>
+                    🔗
+                </span>
 
                 <h2>
                     Quick Links
@@ -399,23 +563,33 @@
 
             <div class="quick-links">
 
-                <a href="https://noahandedsadventure.github.io/main-website/">
+
+                <a
+                    href="https://noahandedsadventure.github.io/main-website/"
+                >
                     🌐 Main Website
                 </a>
 
 
+
                 <a
                     href="https://www.youtube.com/"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     ▶️ YouTube
                 </a>
 
 
+
                 <a
                     href="https://github.com/Noahandedsadventure/staffpage"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     💻 Staff GitHub
                 </a>
+
 
             </div>
 
@@ -426,13 +600,17 @@
 
 
 
-    <!-- UPCOMING -->
+    <!-- =====================================
+         UPCOMING
+    ====================================== -->
 
     <section class="section">
 
         <div class="section-header">
 
-            <span>03</span>
+            <span>
+                03
+            </span>
 
             <h2>
                 Upcoming
@@ -441,13 +619,16 @@
         </div>
 
 
+
         <div class="upcoming-card">
+
 
             <div class="calendar">
 
                 <span id="month">
                     OCT
                 </span>
+
 
                 <strong id="day">
                     01
@@ -456,41 +637,231 @@
             </div>
 
 
+
             <div class="upcoming-info">
 
                 <span class="today">
                     TODAY
                 </span>
 
+
                 <h3>
                     Channel Operations
                 </h3>
 
+
                 <p>
-                    Check the staff portal for
-                    current channel plans and updates.
+                    Check the Staff Operations
+                    section for current channel
+                    plans and updates.
                 </p>
 
             </div>
+
 
 
             <div class="active">
                 ACTIVE
             </div>
 
+
         </div>
 
     </section>
 
+
+
+    <!-- =====================================
+         OPERATIONS MAP
+    ====================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <span>
+                04
+            </span>
+
+            <h2>
+                Operations Map
+            </h2>
+
+        </div>
+
+
+
+        <div class="operations-map">
+
+
+            <a
+                href="livestream.html"
+                class="map-item"
+            >
+
+                <span>
+                    🎥
+                </span>
+
+                <div>
+
+                    <strong>
+                        Livestream
+                    </strong>
+
+                    <small>
+                        Production
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="videos.html"
+                class="map-item"
+            >
+
+                <span>
+                    📹
+                </span>
+
+                <div>
+
+                    <strong>
+                        Videos
+                    </strong>
+
+                    <small>
+                        YouTube Production
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="trains.html"
+                class="map-item"
+            >
+
+                <span>
+                    🚂
+                </span>
+
+                <div>
+
+                    <strong>
+                        Trains
+                    </strong>
+
+                    <small>
+                        Field Operations
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="scanner.html"
+                class="map-item"
+            >
+
+                <span>
+                    📻
+                </span>
+
+                <div>
+
+                    <strong>
+                        Scanner
+                    </strong>
+
+                    <small>
+                        Communications
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="train-log.html"
+                class="map-item"
+            >
+
+                <span>
+                    📋
+                </span>
+
+                <div>
+
+                    <strong>
+                        Train Log
+                    </strong>
+
+                    <small>
+                        Logging
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="schedule.html"
+                class="map-item"
+            >
+
+                <span>
+                    📅
+                </span>
+
+                <div>
+
+                    <strong>
+                        Schedule
+                    </strong>
+
+                    <small>
+                        Events & Planning
+                    </small>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
 </main>
 
 
+
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
     <div>
         © 2026 Noah & Ed's Train Adventures
     </div>
+
 
     <div>
         Staff Operations Center
@@ -500,28 +871,68 @@
 
 
 
-<!-- NOTICE -->
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
 
-<div id="notice" class="notice">
+<script>
 
-    <strong id="noticeTitle">
-        Section
-    </strong>
-
-    <p>
-        This section is ready for future
-        staff tools and links.
-    </p>
-
-    <button onclick="closeNotice()">
-        Close
-    </button>
-
-</div>
+    /*
+        Automatically update the
+        date displayed on the dashboard.
+    */
 
 
+    const now = new Date();
 
-<script src="script.js"></script>
+
+    const months = [
+
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC"
+
+    ];
+
+
+    const monthElement =
+        document.getElementById("month");
+
+
+    const dayElement =
+        document.getElementById("day");
+
+
+    if (monthElement) {
+
+        monthElement.textContent =
+            months[now.getMonth()];
+
+    }
+
+
+    if (dayElement) {
+
+        dayElement.textContent =
+            String(
+                now.getDate()
+            ).padStart(2, "0");
+
+    }
+
+</script>
+
 
 </body>
+
 </html>
+```
